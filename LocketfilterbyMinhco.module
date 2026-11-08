@@ -36,7 +36,7 @@ DOMAIN-SUFFIX,ingest.sentry.io,REJECT
 # Locket Gold - Xóa Header RevenueCat và Firebase
 deleteHeader_RC = type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers),script-path=https://github.com/tlm19122005-creator/LocketGoldfilterbyMinhco/blob/main/deleteHeader_Firebase.js,timeout=60
 
-deleteHeader_Firebase = type=http-request,pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+,script-path=https://github.com/tlm19122005-creator/LocketGoldfilterbyMinhco/blob/main/deleteHeader_RC.js.js,timeout=60
+deleteHeader_Firebase = type=http-request,pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-4252a\/.+,script-path=https://github.com/tlm19122005-creator/LocketGoldfilterbyMinhco/blob/main/deleteHeader_RC.js,timeout=60
 
 # Locket Gold - Kích hoạt quyền thuê bao và tính năng 45s
 revenuecat = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers),script-path=https://github.com/tlm19122005-creator/LocketGoldfilterbyMinhco/blob/main/evenuecat.js,requires-body=true,max-size=-1,timeout=60
