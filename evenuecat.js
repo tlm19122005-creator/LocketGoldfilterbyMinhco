@@ -2,13 +2,12 @@
 const mapping = {
   'Locket': ['Gold']
 };
-// =========   Phần cố định  ========= // 
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
   obj = JSON.parse($response.body);
-obj.Attention = "Chúc mừng bạn! Vui lòng không bán hoặc chia sẻ cho người khác!";
-var NMS = {
+obj.Attention = "Chúc mừng bạn, không bán vá chia sẻ cho người khác một sản phẩm của minhco05!";
+var MC = {
       auto_resume_date: null,
-      display_name: "locket_1600_1y",
+      display_name: "locket",
       is_sandbox: true,
       ownership_type: "PURCHASED",
       billing_issues_detected_at: null,
@@ -18,26 +17,26 @@ var NMS = {
           "amount": 399000.0,
           "currency": "VND"
       },
-      expires_date: "9999-01-09T10:10:14Z",
+      expires_date: "2030-12-19T00:00:00Z",
       grace_period_expires_date: null,
       refunded_at: null,
       unsubscribe_detected_at: null,
-      original_purchase_date: "2027-11-25T10:10:15Z",
-      purchase_date: "2027-11-25T10:10:14Z",
+      original_purchase_date: "2005-12-18T18:00:00Z",
+      purchase_date: "2005-12-18T18:00:00Z",
       store: "app_store",
-      store_transaction_id: "2000001108724193",
+      store_transaction_id: "852211254886",
   },
   locketGold = {
       grace_period_expires_date: null,
-      purchase_date: "2027-11-25T10:10:14Z",
-      product_identifier: "locket_1600_1y",
-      expires_date: "9999-01-09T10:10:14Z"
+      purchase_date: "2005-12-18T18:00:00Z",
+      product_identifier: "locket",
+      expires_date: "2030-12-19T00:00:00Z"
   };
 const match = Object.keys(mapping).find(e => ua.includes(e));
 if (match) {
   let [e, s] = mapping[match];
-  s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = NMS) : obj.subscriber.subscriptions["locket_1600_1y"] = NMS, obj.subscriber.entitlements[e] = locketGold
-} else obj.subscriber.subscriptions["locket_1600_1y"] = NMS, obj.subscriber.entitlements.pro = locketGold;
+  s ? (locketGold.product_identifier = s, obj.subscriber.subscriptions[s] = MC) : obj.subscriber.subscriptions["locket"] = MC, obj.subscriber.entitlements[e] = locketGold
+} else obj.subscriber.subscriptions["locket"] = MC, obj.subscriber.entitlements.pro = locketGold;
 $done({
   body: JSON.stringify(obj)
 });
