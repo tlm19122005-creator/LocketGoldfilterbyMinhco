@@ -1,4 +1,4 @@
-*******************************************************
+/*******************************************************
 > Locket AI Filter Modifier, Unblur & Community Gold VIP
 > Tác giả: @minhco05
 > Hỗ trợ: Shadowrocket, Loon, Surge, Quantumult X
