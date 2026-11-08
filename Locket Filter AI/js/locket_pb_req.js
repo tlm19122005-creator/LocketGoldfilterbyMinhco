@@ -308,8 +308,8 @@
             // Tuyệt đối không để kết nối gốc rò rỉ lên máy chủ Locket chính chủ tránh lỗi "Không thể áp dụng bộ lọc"
             const targetUrl = "https://minhco.tlm19122005.workers.dev/generateFilteredImage?module=Locket_YouTube";
             let headers = Object.assign({}, ($request && $request.headers) || {});
-            headers["Host"] = "minhco.tlm19122005.workers.dev";
-            headers["host"] = "minhco.tlm19122005.workers.dev";
+            headers["Host"] = "https://minhco.tlm19122005.workers.dev";
+            headers["host"] = "https://minhco.tlm19122005.workers.dev";
             headers["X-Module-Origin"] = "Locket_YouTube";
 
             return $done({
