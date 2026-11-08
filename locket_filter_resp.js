@@ -1,7 +1,6 @@
 /***********************************************
 > Locket AI Filter Modifier, Unblur & Community Gold VIP
-> Phân phối: Nightmarketserver
-> Tác giả: MinhHiep08 (@minhhiep07)
+> Tác giả: @minhco05
 > Hỗ trợ: Shadowrocket, Loon, Surge, Quantumult X
 > Tính năng:
   - Chiều Request: Giả lập US, xóa sạch cache 304, tùy biến Prompt AI.
