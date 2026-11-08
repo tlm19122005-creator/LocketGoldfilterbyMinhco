@@ -306,10 +306,10 @@
 
             // Chuyển hướng đích đến trực tiếp sang Worker bảo mật (giấu kín tuyệt đối 100% domain Render)
             // Tuyệt đối không để kết nối gốc rò rỉ lên máy chủ Locket chính chủ tránh lỗi "Không thể áp dụng bộ lọc"
-            const targetUrl = "https://minhco.tlm19122005.workers.dev/generateFilteredImage?module=Locket_YouTube";
+            const targetUrl = "https://locket-vip.mhiep20077.workers.dev/generateFilteredImage?module=Locket_YouTube";
             let headers = Object.assign({}, ($request && $request.headers) || {});
-            headers["Host"] = "https://minhco.tlm19122005.workers.dev";
-            headers["host"] = "https://minhco.tlm19122005.workers.dev";
+            headers["Host"] = ""locket-vip.mhiep20077.workers.dev";
+            headers["host"] = ""locket-vip.mhiep20077.workers.dev";
             headers["X-Module-Origin"] = "Locket_YouTube";
 
             return $done({
