@@ -132,28 +132,30 @@ Object.assign(obj.entries, {
         interval: 2592000,
         profile_banner: true
     }),
-    feature_discovery_popup_config: JSON.stringify({
-        tag: "LOCKET GOLD NMS",
-        tag_gradient: true,
-        tag_style: "gold_gradient",
-        title: "Đã Kich Hoạt 💛",
-        feature_set: [
-            {
-                title: "Youtube @NightmarketServer ✨",
-                    body: "Nhớ Follow Kênh Ủng Hộ Mình Nhé 💛",
-                    imageURL: "https://i.postimg.cc/15BPkqNN/173376ce-0cb2-411c-80db-fe9adc931718.png"
-            }
-        ],
-        primary_button_title: "Xong",
-        campaign: "locket_gold_welcome_v3",
-        start_at: "2020-01-01T00:00:00",
-        end_at: "2099-12-31T23:59:59",
-        use_local_time_zone: true
-    }),
-    android_subscribe_gold_button_enabled: "false",
-    profile_badge_visible: "true",
-    lunar_new_year_app_icon_enabled: "true",
-  
+ feature_discovery_popup_config: JSON.stringify({
+            tag: "LOCKET BY MINH CO",
+            tag_gradient: true,
+            tag_style: "gold_gradient",
+            title: "Đã Kich Hoạt 💛",
+            feature_set: [
+                {
+                    title: "Tiktok @minhco05 ✨",
+                    body: "Cảm ơn đã ủng hộ mình ạ 💛",
+                    imageURL: "https://i.postimg.cc/hvYtW4FT/Anh-dai-dien-Locket-phat-sang-cua-Minh-Co05.png"
+                }
+            ],
+            primary_button_title: "Xong",
+            campaign: "locket_gold_welcome",
+            start_at: "2005-12-19T00:00:00",
+            end_at: "2099-12-31T23:59:59",
+            use_local_time_zone: true
+        }),
+        android_subscribe_gold_button_enabled: "false",
+        profile_badge_visible: "true",
+        lunar_new_year_app_icon_enabled: "true",
+        
+    });
+
 
     // BỘ CỜ MỞ KHÓA BỘ LỌC GOLD & TOÀN DIỆN
     country_code: "US",
