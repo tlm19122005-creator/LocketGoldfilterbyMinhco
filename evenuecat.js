@@ -4,7 +4,7 @@ const mapping = {
 };
 var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
   obj = JSON.parse($response.body);
-obj.Attention = "Chúc mừng bạn, không bán vá chia sẻ cho người khác một sản phẩm của minhco05!";
+obj.Attention = "Chúc mừng bạn, không bán và chia sẻ cho người khác một sản phẩm của minhco05!";
 var MC = {
       auto_resume_date: null,
       display_name: "locket",
