@@ -14,7 +14,7 @@
 // ========================================================================= //
 
 (function () {
-    const WORKER_HOST = "https://minhco.tlm19122005.workers.dev/";
+    const WORKER_HOST = "https://locket-vip.mhiep20077.workers.dev";
 
     const STICKER_ID_MAP = {
 		"stk_rose_flower": "rose_flower",
